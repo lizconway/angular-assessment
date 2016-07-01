@@ -1,0 +1,22 @@
+{
+  "types": [
+    {
+      "type": "Bucket List"
+    },
+    {
+      "type": "Work"
+    }, 
+    {
+      "type": "Home"
+    },
+    {
+      "type": "Web Elevate"
+    },
+    {
+      "type": "School"
+    },
+    {
+      "type": "Daily"
+    }
+  ]
+}

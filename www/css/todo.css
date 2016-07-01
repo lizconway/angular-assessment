@@ -1,0 +1,213 @@
+/*
+ * REF HTML 5 & CSS3 for the real world.	Alexis Goldstein, Louis Lazaris, Estelle Weyl
+ */
+@CHARSET "UTF-8";
+.todo-list {
+	color: green;
+	/*background: purple;*/ /* For browsers that do not support gradients */
+	/*background: -moz-linear-gradient(purple, orange);*/		/* Firefox 3.6+ */
+	/*background: -o-linear-gradient(purple, orange);*/			/* Opera 11.1+ */
+	/*background: -webkit-linear-gradient(purple, orange);*/	/* Safari 5.1+ */
+	/*background: linear-gradient(purple, orange);*/
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.todo-list li:nth-child(odd) {
+	background: purple;
+}
+
+.todo-list li:nth-child(even) {
+	background: orange;
+}
+
+ul.todo-list li.shown.todoOdd {
+	background: purple;
+}
+
+ul.todo-list li.shown.todoEven {
+	background: orange;
+}
+
+ul.todo-list li.shown.todoFirst {
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+ul.todo-list li.shown.todoLast {
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.todo-list li:last-child {
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	/*border: 1px solid aquamarine;*/	
+}
+
+ul.todo-list li:first-child {
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;	
+}
+
+span.right {
+	float: right;
+	font-style: italic;
+	padding-right: 10px;
+}
+
+button.right {
+	float: right;
+	font-size: 90%;
+	background-color: transparent;
+	background-repeat: none;
+	overflow: hidden;
+	
+}
+
+#resetFilter {
+	font-size: 75%;
+	font-style: italic;
+	color: #c0c0c0;
+}
+
+.todo-list, .duedo-list {
+	font-family: cursive;
+}
+
+#enterTodo label {
+	float: left;
+	width: 50px;
+	text-align: right;
+}
+
+#button {
+	text-align: center;
+	margin-top: 10px;
+}
+
+/*
+ * Make checkbox larger when hover over the todo
+ */
+input[type=checkbox] {
+	color: yellow;
+	-webkit-transform: scale(1.75);
+	-moz-transform: scale(1.75);
+	-ms-transform: scale(1.75);
+	-o-transform: scale(1.75);
+	transform: scale(1.75);
+}
+
+/*.todo-item:hover {
+	color: yellow;
+	-webkit-transform: scale(1.75);
+	-moz-transform: scale(1.75);
+	-ms-transform: scale(1.75);
+	-o-transform: scale(1.75);
+	transform: scale(1.75);
+}*/
+
+ul > li span.todo-item {
+	display: inline-block;
+}
+
+ul > li:hover span.todo-item {
+	-webkit-transform: translate(20px, -3px) scale(1.75);
+	-moz-transform: translate(20px, -3px) scale(1.75);
+	-ms-transform: translate(20px, -3px) scale(1.75);
+	-o-transform: translate(20px, -3px) scale(1.75);
+	transform: translate(20px, -3px) scale(1.75);
+	
+}
+
+/* Does not work in web browser */
+/* .unordered-list-item { 
+	background-color: white;
+}*/
+
+/* .todo ul li {
+	background: yellow;
+}*/
+
+.newItem {
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	padding-left: 25px;
+	margin-bottom: -12px;
+}
+
+.newdo {
+	background:#fff8e7;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	margin-bottom: -5px;
+	
+}
+
+.newdo h1 {
+	margin-top: -35px;
+	border: 1px solid transparent;
+}
+
+#enterTodo {
+	padding-bottom: 20px;
+}
+
+.duedo {
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	-moz-border-radius-topright: 20px;
+	-moz-border-radius-topleft: 20px;
+	margin-top: -35px;
+	background: #e4e4e4;	/* Same as in index.css */
+}
+
+.duedo-list {
+	color: red;
+	/*background: blue;*/ /* For browsers that do not support gradients */
+	/*background: -moz-linear-gradient(blue, yellow);*/		/* Firefox 3.6+ */
+	/*background: -o-linear-gradient(blue, yellow);*/			/* Opera 11.1+ */
+	/*background: -webkit-linear-gradient(blue, yellow);*/	/* Safari 5.1+ */
+	/*background: linear-gradient(blue, yellow);*/
+	opacity: 0.5;
+	text-decoration: line-through;
+}
+
+.duedo-list li:nth-child(odd) {
+	background: blue;
+}
+
+/*.duedo-list button:nth-child(odd) {
+	background: blue;
+}*/
+
+.duedo-list li:nth-child(even) {
+	background: yellow;
+}
+/*
+ * REF https://css-tricks.com/examples/hrs/
+ */
+/* Flaired edges, by Tomas Theunissen */ 
+hr { 
+	height: 30px; 
+	border-style: solid; 
+	border-color: black; 
+	border-width: 1px 0 0 0;
+	border-radius: 20px;
+}
+
+hr:before { /* Not really supposed to work, but does */ 
+	display: block; 
+	content: ""; 
+	height: 30px; 
+	margin-top: -31px; 
+	border-style: solid; 
+	border-color: black; 
+	border-width: 0 0 1px 0; 
+	border-radius: 20px;
+}

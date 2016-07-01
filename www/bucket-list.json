@@ -1,0 +1,49 @@
+{
+  "todos": [
+    {
+      "todo": "Buck 65",
+      "type": "Bucket List",
+      "done": false
+    },
+    {
+      "todo": "Daft Punk",
+      "type": "Bucket List",
+      "done": false
+    }, 
+    {
+      "todo": "James Iha",
+      "type": "Bucket List",
+      "done": false
+    },
+    {
+      "todo": "M Ward",
+      "type": "Bucket List",
+      "done": false
+    },
+    {
+      "todo": "Chromio",
+      "type": "Bucket List",
+      "done": false
+    },
+    {
+      "todo": "Yuck",
+      "type": "Bucket List",
+      "done": true
+    },
+    {
+      "todo": "Big Black",
+      "type": "Bucket List",
+      "done": true
+    },
+    {
+      "todo": "Kid 606",
+      "type": "Bucket List",
+      "done": true
+    },
+    {
+      "todo": "Sonic Youth",
+      "type": "Bucket List",
+      "done": true
+    }
+  ]
+}
