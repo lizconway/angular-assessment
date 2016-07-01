@@ -10,7 +10,7 @@ The app is divided into 3 sections:
 
 Add a ToDo
 ----------
-Type an explanation of what you want to do into the 'ToDo' box.  Whatever you will be reflected at the bottom of the ToDo section.
+Type an explanation of what you want to do into the 'ToDo' box.  Whatever you type will be reflected at the bottom of the ToDo section.
 Choose what type of todo this is.  
 **NB**  *Even though the todo text appears in the ToDo section, it will not be added to the list until you click the 'Add' button*  
 Click the 'Add' button to add this todo to the list.
