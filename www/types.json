@@ -1,22 +1,13 @@
 {
   "types": [
     {
-      "type": "Bucket List"
+      "type": "Home"
     },
     {
       "type": "Work"
     }, 
     {
-      "type": "Home"
-    },
-    {
-      "type": "Web Elevate"
-    },
-    {
       "type": "School"
-    },
-    {
-      "type": "Daily"
     }
   ]
 }

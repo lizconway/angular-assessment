@@ -1,0 +1,49 @@
+{
+  "todos": [
+    {
+      "todo": "Buck 65",
+      "type": "Work",
+      "done": false
+    },
+    {
+      "todo": "Daft Punk",
+      "type": "Work",
+      "done": false
+    }, 
+    {
+      "todo": "James Iha",
+      "type": "Home",
+      "done": false
+    },
+    {
+      "todo": "M Ward",
+      "type": "Work",
+      "done": false
+    },
+    {
+      "todo": "Chromio",
+      "type": "Home",
+      "done": false
+    },
+    {
+      "todo": "Yuck",
+      "type": "Work",
+      "done": true
+    },
+    {
+      "todo": "Big Black",
+      "type": "Work",
+      "done": true
+    },
+    {
+      "todo": "Kid 606",
+      "type": "Home",
+      "done": true
+    },
+    {
+      "todo": "Sonic Youth",
+      "type": "Home",
+      "done": true
+    }
+  ]
+}

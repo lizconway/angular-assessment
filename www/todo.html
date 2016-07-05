@@ -1,0 +1,67 @@
+        <div class="app">
+			<!-- <div data-role="page" id="todo-page"> -->
+			<!-- REF https://docs.angularjs.org/api/ng/directive/select -->
+			<div>
+				<label for="search">Filter :  </label>
+				<select name="search" data-ng-model="filterType">
+					<option value="" id="resetFilter">reset filter</option>
+					<option data-ng-repeat="type in types" value="{{type.type}}">{{type.type}}</option>{{filterType}}
+				</select>
+				<!-- <input type="text" id="search" data-ng-model="filterType" />{{searchName}} -->
+			</div>	<!-- Filter Div -->
+			<div class="todo">
+				<h1>To Do</h1>
+				<ul class="todo-list">
+				<!-- How to Filter todo list by boolean data
+						REF http://stackoverflow.com/questions/18016770/angularjs-filtering -->
+					<li data-ng-repeat="todo in todoList | filter:filterType" data-ng-show="!todo.done">
+						<input type="checkbox" data-ng-model="todo.done" />
+						<span class="todo-item"><strong>{{todo.todo}}</strong></span>
+						<span class="right">{{todo.type}}</span>
+					</li>
+				</ul>
+				<ul class="todo-list">
+					<li class="newItem">
+						{{newDo}}
+						<span class="right">{{newDoType}}</span>
+					</li>
+				</ul>
+			</div>	<!-- /todo Div -->
+			<div class="newdo">
+			<hr>
+				<h1>New Do</h1>
+				<div id="enterTodo">
+					<label for="newToDo">To Do :
+					</label>
+					<input type="text" name="newToDo" data-ng-model="newDo" />
+					<br>
+					<label for="newType">Type :</label>
+					<select name="newType" data-ng-model="newDoType">
+						<option data-ng-repeat="type in types" value="{{type.type}}">{{type.type}}</option>{{filterType}}
+					</select>
+					<br>
+					<div id="button">
+						<button id="add-button"
+							data-ng-click="addTodo()">
+							Add ToDo
+						</button>
+					</div>	<!-- /button -->
+				</div>	<!-- /enterTodo -->
+
+			</div>	<!-- /newDo Div -->
+				<hr>
+			<div class="duedo">
+				<h1>Due Do</h1>
+				<ul class="duedo-list">
+					<li data-ng-repeat="todo in todoList | filter:filterType" data-ng-show="todo.done">
+						<input type="checkbox" data-ng-model="todo.done" />
+						<strong>{{todo.todo}}</strong>
+						<button data-ng-click="deleteEntry($index)" class="right"><i class="mdi mdi-delete"></i></button>
+						<span class="right">{{todo.type}}</span>
+					</li>
+				</ul>
+			</div>	<!-- /duedo -->
+			<a href="#/types">Edit ToDo Types</a>
+	        <!-- </div> -->	<!-- /todo-page -->
+        </div>	<!-- /app Div -->
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->

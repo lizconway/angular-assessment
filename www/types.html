@@ -1,0 +1,26 @@
+        <div class="app">
+	        <!-- <div data-role="page" id="editType"> -->
+	        	<h1>Edit ToDo Types Page</h1>
+				<div id="unremoveable">{{inUse}}</div>
+				<div id="addType">
+					<ul>
+						<li data-ng-repeat="type in types">
+							{{type.type}}
+							<button data-ng-click="deleteType($index)" class="bin"><i class="mdi mdi-delete"></i></button>
+						</li>
+					</ul>
+					<label for="new-Type">New Type :
+					</label>
+					<input type="text" name="new-Type" data-ng-model="newType" data-ng-focus="inUse=''" />
+					<br>
+					<div id="typeButton">
+						<button data-ng-click="addType()">
+							Add Type
+						</button>
+					</div>	<!-- /typeButton -->
+				</div>	<!-- /addType -->
+				<a href="#/todo">Back to ToDo List</a>
+	        	
+	        <!-- </div> -->	<!-- /editType -->
+        </div>	<!-- /app Div -->
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
