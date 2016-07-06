@@ -95,7 +95,7 @@ div#unremoveable {
 /** Align the label in the 'New Do' section */
 #enterTodo label {
 	float: left;
-	width: 50px;
+	width: 60px;
 	text-align: right;
 }
 
