@@ -8,6 +8,7 @@
 @CHARSET "UTF-8";
 .todo-list {
 	color: green;
+	font-weight: bold;
 }
 
 /** No bullet, left aligned */
