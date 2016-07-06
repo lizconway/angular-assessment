@@ -18,7 +18,8 @@ ul {
 
 /** Set backgrounds of odd and even children in the list */
 .todo-list li:nth-child(odd):not(.newItem) {
-	background: purple;
+	/*background: purple;*/
+	background: #bf5fff /*violet flower */
 }
 
 .todo-list li:nth-child(even) {
@@ -95,7 +96,7 @@ div#unremoveable {
 /** Align the label in the 'New Do' section */
 #enterTodo label {
 	float: left;
-	width: 60px;
+	width: 70px;
 	text-align: right;
 }
 
