@@ -1,5 +1,5 @@
 # angular-assessment
-ToDo application for Angular assessment (Server Side module)
+ToDo application for Angular assessment (Mobile App module)
 
 This app allows you to add items to a ToDo list, and associate the todo item with a category (called type in the app).
 
@@ -17,12 +17,12 @@ Click the 'Add' button to add this todo to the list.
 
 Complete a ToDo
 ---------------
-Simply tick the checkbox, or swipe the todo item to mark a todo item as completed.  
+Simply tick the checkbox to mark a todo item as completed.  
 It will disappear from the todo list, and appear in the DueDo section.
 
 UnDo a ToDo
 -----------
-Simply tick the checkbox, or swipe an item in the DueDo section to undo the todo.  
+Simply tick the checkbox in the DueDo section to undo the todo.  
 It will disappear from the DueDo list, and appear in the ToDo section.
 
 Delete a ToDo
@@ -34,11 +34,14 @@ The ToDo item is completely gone.
 
 Edit ToDo Types
 ---------------
+An initial set of ToDo types are included in the app - Home, Work, School.
+You can (and probably should) add your own ToDo types, or remove ones you do not want.  
 To add or remove ToDo types click the 'Edit Types' button.  
 Enter new ToDo types, or delete existing types.  
 
-If a type has todo items associated with it, then that type cannot be deleted.
+If a type has todo items associated with it, then that type cannot be deleted and an appropriate error message is displayed.
 
-Bucket List
------------
-To add the bucket list todo items to your ToDo list, simply click the 'Add bucket list' button
+Installation
+------------
+Scan the QR code image with an android mobile phone to install this ToDo app.
+

@@ -212,6 +212,10 @@ button {
 	padding-left: 5px;
 }
 
+#addType ul > li:nth-child(even) {
+	background: #ccc;
+}
+
 /*
  * REF https://css-tricks.com/examples/hrs/
  */

@@ -130,11 +130,11 @@ Mobile Web Applications, Digital Skills Academy
 					Edit Types
 				</button>
 			</div>
-			<!-- <div class="centreButton">
+			<div class="centreButton">
 				<button data-ng-click="saveToDoList()">
 					Save ToDo List
 				</button>
-			</div> -->
+			</div>
 			</div>	<!-- /todo-page -->
 	        <div data-role="page" id="editType" data-ng-show="!showTodos">
 	        	<h1>Edit ToDo Types Page</h1>
@@ -149,21 +149,18 @@ Mobile Web Applications, Digital Skills Academy
 					<label for="new-Type">New Type :
 					</label>
 					<input type="text" name="new-Type" data-ng-model="newType" data-ng-focus="inUse=''" />
-					<br>
-					<div id="typeButton">
-						<button data-ng-click="addType()">
-							Add Type
-						</button>
-					</div>	<!-- /typeButton -->
-					<!-- <div id="saveTypeButton">
+					<button data-ng-click="addType()">
+						Add Type
+					</button>
+					<div id="saveTypeButton" class="centreButton">
 						<button data-ng-click="saveType()">
-							Save Type
+							Save ToDo Types
 						</button>
-					</div> -->	<!-- /saveTypeButton -->
+					</div>	<!-- /saveTypeButton -->
 				</div>	<!-- /addType -->
 				<div class="centreButton">
 					<button data-ng-click="showToDoListPage()">
-						ToDo List
+						Show ToDo List
 					</button>
 				</div>
 

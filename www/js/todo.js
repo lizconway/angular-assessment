@@ -249,10 +249,14 @@ todoApp.controller("todoController", function($scope, todoFactory) {
 	 */
 	$scope.addType = function() {
 		$scope.inUse = "";		/** Binding - Ensure error message is not displayed */
+		console.log("Before adding new Entry :  types");
+		$scope.types.forEach(function(type) {
+			console.log(type);
+		});
 		console.log("Adding new Entry :  " + $scope.newType);
 		$scope.types.push(
 				{
-					type:$scope.newType,
+					type:$scope.newType
 				}
 		);
 		$scope.newType = "";		/** Binding - blank the ToDo type input field */
