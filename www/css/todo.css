@@ -9,6 +9,7 @@
 .todo-list {
 	color: green;
 	font-weight: bold;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 /** No bullet, left aligned */
@@ -20,7 +21,8 @@ ul {
 /** Set backgrounds of odd and even children in the list */
 .todo-list li:nth-child(odd):not(.newItem) {
 	/*background: purple;*/
-	background: #bf5fff /*violet flower */
+	/*background: #bf5fff*/ /*violet flower */
+	background: lightblue;
 }
 
 .todo-list li:nth-child(even) {
@@ -145,7 +147,8 @@ ul > li:hover span.todo-item {
 	-moz-border-radius-bottomleft: 20px;
 	padding-left: 25px;
 	margin-bottom: -12px;
-	background: lightblue;
+	/*background: lightblue;*/
+	background: #bf5fff /*violet flower */
 }
 
 /** Apply a linear gradient to the New Do section
@@ -193,6 +196,8 @@ ul > li:hover span.todo-item {
 	color: red;
 	opacity: 0.5;
 	text-decoration: line-through;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+	
 }
 
 /** Set backgrounds of odd and even children in the list */
