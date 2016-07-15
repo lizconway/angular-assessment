@@ -129,7 +129,20 @@ ul > li:hover span.todo-item {
 	-ms-transform: translate(20px, -3px) scale(1.75);
 	-o-transform: translate(20px, -3px) scale(1.75);
 	transform: translate(20px, -3px) scale(1.75);
-	
+}
+
+/** Enlarge the checkbox as well */
+ul > li:hover input[type=checkbox] {
+	/*-webkit-transform: translate(20px, -3px) scale(1.75);
+	-moz-transform: translate(20px, -3px) scale(1.75);
+	-ms-transform: translate(20px, -3px) scale(1.75);
+	-o-transform: translate(20px, -3px) scale(1.75);
+	transform: translate(20px, -3px) scale(1.75);*/
+	-webkit-transform: scale(1.75);
+	-moz-transform: scale(1.75);
+	-ms-transform: scale(1.75);
+	-o-transform: scale(1.75);
+	transform: scale(1.75);
 }
 
 /* Does not work in web browser */
