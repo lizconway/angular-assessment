@@ -56,6 +56,7 @@
     <icon src="res/icon/winphone2.png" gap:platform="winphone"   gap:role="background" />
 
     <!-- Define app splash screen for each platform. -->
+    <splash src="splash.png" />
     <gap:splash src="res/splashy/ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="res/splashy/mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
     <gap:splash src="res/splashy/hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
